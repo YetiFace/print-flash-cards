@@ -1,0 +1,83 @@
+@font-face {
+    font-family: mplus2;
+    src: url(mplus2.ttf);
+}
+
+* {
+  font-family: 'M PLUS 2', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#controls{
+width: 40vw;
+min-width: 300px;
+margin: 0 auto;
+margin-top: 20px;
+background: rgba(255, 165, 0, 0.73);
+text-align: center;
+padding: 25px;
+border-radius: 9px;
+}
+
+#controls textarea {
+height: 20vh;
+}
+
+.printHelp {
+  background: rgba(50, 30, 165, 0.73);
+  margin-top: 40px;
+  padding: 15px 30px 20px 30px;
+  border-radius: 9px;
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: calc(297mm / 3) calc(297mm / 3) calc(297mm / 3);
+  grid-template-rows: calc(210mm / 4) calc(210mm / 4) calc(210mm / 4) calc(210mm / 4);
+  height: 210mm;
+  width: 297mm;
+  margin: 0 auto;
+}
+
+.box {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=);
+  padding: 2px;
+  overflow: hidden;
+}
+.card {
+  height: 100%;
+  background-color: white;
+}
+
+.card p {
+  margin: 0;
+  text-align: center;
+  font-size: large;
+}
+
+.card p.word {
+  font-size: x-large;
+}
+
+@media print {
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+    section {
+        break-after: page;
+    }
+    #controls {
+        display: none !important;
+    }
+
+}
+
+
+section.chrome {
+margin-top: -2px;
+}

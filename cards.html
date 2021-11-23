@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index.css" media="all">
+</head>
+<body>
+
+<script>
+    let body = document.getElementsByTagName("body")[0];
+
+    var task = sessionStorage["task"];
+    var wordsStr = sessionStorage["words"];
+
+    if(!wordsStr){
+      window.location.href = "index.html";
+    }
+    if(!task){
+      task = "<br>";
+    }
+
+    let words = wordsStr.split(/\n/);
+    let paperReq = Math.ceil(words.length/12);
+
+    for(let i=0;i<paperReq;i++){
+      let newPaper = "<section>";
+      for(let y=0;y<12;y++){
+        if(!words[(i*12)+y]){
+          break;
+        }
+        console.log(words[(i*12)+y]);
+        newPaper += (
+          "<div class='box'>" +
+          "<div class='card'>" +
+          "<br><p>" + task + "</p>" +
+          "<br><br>" +
+          "<p class='word'><strong>" + words[(i*12)+y] + "</strong></p>" +
+          "</div></div>"
+        );
+      }
+      newPaper += "</section>";
+      body.insertAdjacentHTML("beforeend", newPaper);
+    }
+
+    // printing styles for chrome
+    if(window.chrome){
+        document.querySelectorAll("section")
+          .forEach((input) => {
+            input.classList.add('chrome');
+        });
+    }
+</script>
+</body>
+</html>

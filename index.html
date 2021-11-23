@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css" media="all">
+</head>
+<body>
+  <div id='controls'>
+    <h1>Printable Flash Cards</h1>
+    <p>
+      A simple website for printing approximately credit card sized flash cards onto A4.
+      <br>
+    </p>
+    <form name="cardInfo">
+      <p>
+        <label for='task'>Card task, e.g. spell, say, fill in the blanks (leave empty if unwanted):</label><br><br>
+        <input name="task" type="text" placeholder="Spell">
+      </p>
+      <p>
+        <label for="words">List all the words you want, one per line<br>
+        <em>(Copy and pasting words written and saved elsewhere will probably be best):</em></label><br><br>
+        <textarea name="words" placeholder="Wanderful&#10;Speeling&#10;Cardz"></textarea>
+      </p>
+      <br>
+      <input id="cardInfoInput" type="submit" value="Create Cards">
+    </form>
+    <div class='printHelp'>
+      <p>
+        <strong>Important Printing Note</strong><br><br>
+        This is designed to print 12 cards per A4 paper set to <em>landscape</em> (it will take as many words as you have but 12 per sheet).<br><br>
+        Make sure in the print settings the scale is set to 100 and the margins are set to 'none'. The cards should completely cover the page.<br><br>
+        Tested with Firefox and Chrome Nov 2021 - other browsers may or may not work.
+      </p>
+    </div>
+  </div>
+<script>
+    let formEle = document.getElementsByName("cardInfo")[0];
+    formEle.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let task = document.forms["cardInfo"]["task"].value;
+      let words = document.forms["cardInfo"]["words"].value;
+
+      sessionStorage.setItem("task", task);
+      sessionStorage.setItem("words", words);
+
+      window.location.href = "cards.html";
+    });
+</script>
+</body>
+</html>
