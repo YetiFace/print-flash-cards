@@ -13,18 +13,18 @@ body {
 }
 
 #controls{
-width: 40vw;
-min-width: 300px;
-margin: 0 auto;
-margin-top: 20px;
-background: rgba(255, 165, 0, 0.73);
-text-align: center;
-padding: 25px;
-border-radius: 9px;
+  width: 40vw;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: rgba(255, 165, 0, 0.73);
+  text-align: center;
+  padding: 25px;
+  border-radius: 9px;
 }
 
 #controls textarea {
-height: 20vh;
+  height: 20vh;
 }
 
 .printHelp {
@@ -73,12 +73,8 @@ section {
     section {
         break-after: page;
     }
-    #controls {
-        display: none !important;
-    }
-
 }
 
 section.chrome {
-margin-top: -2px;
+  margin-top: -2px;
 }
