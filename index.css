@@ -33,6 +33,7 @@ body {
   text-decoration: underline overline white dotted;
   text-decoration-thickness: 5px;
   text-underline-offset: 7px;
+  font-size: 40px;
 }
 #controls .title p {
   color: white;
