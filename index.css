@@ -27,7 +27,7 @@ body {
   text-decoration-thickness: 5px;
   text-underline-offset: 7px;
 }
-#controls p:only-of-type {
+#controls .title p {
   color: white;
   margin-top: -10px;
 }
