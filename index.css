@@ -3,6 +3,11 @@
     src: url(notosans.ttf);
 }
 
+@font-face {
+    font-family: kaushanscript;
+    src: url(kaushanscript.ttf);
+}
+
 * {
   font-family: 'notosans', sans-serif;
   line-height: 1.2em;
@@ -21,8 +26,10 @@ body {
   text-align: center;
   padding: 25px;
   border: 12px double white;
+  color: #272b2e;
 }
 #controls h1 {
+  font-family: 'kaushanscript', cursive;
   text-decoration: underline overline white dotted;
   text-decoration-thickness: 5px;
   text-underline-offset: 7px;
