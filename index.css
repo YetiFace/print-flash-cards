@@ -27,6 +27,12 @@ body {
   text-decoration-thickness: 5px;
   text-underline-offset: 7px;
 }
+#controls input, #controls textarea {
+  caret-color: purple;
+}
+#controls input:focus, #controls textarea:focus {
+  outline: 4px dotted darkgreen;
+}
 #controls input {
   font-size: 1em;
 }
@@ -72,8 +78,10 @@ section {
   font-size: xx-large;
 }
 
-@media screen and (min-width: 768px) {
-  width: 40vw;
+@media screen and (min-width: 992px) {
+  #controls {
+    width: 40vw;
+  }
 }
 @media print {
     @page {
