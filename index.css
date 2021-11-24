@@ -13,7 +13,7 @@ body {
 }
 
 #controls{
-  width: 40vw;
+  width: 80%;
   min-width: 300px;
   margin: 0 auto;
   margin-top: 20px;
@@ -21,6 +21,11 @@ body {
   text-align: center;
   padding: 25px;
   border-radius: 9px;
+}
+#controls h1 {
+  text-decoration: underline overline white dotted;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 7px;
 }
 #controls input {
   font-size: 1em;
@@ -67,13 +72,16 @@ section {
   font-size: xx-large;
 }
 
+@media screen and (min-width: 768px) {
+  width: 40vw;
+}
 @media print {
     @page {
-        size: A4 landscape;
-        margin: 0;
+      size: A4 landscape;
+      margin: 0;
     }
     section {
-        break-after: page;
+      break-after: page;
     }
 }
 
