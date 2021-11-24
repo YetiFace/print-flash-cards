@@ -1,10 +1,10 @@
 @font-face {
-    font-family: mplus2;
-    src: url(mplus2.ttf);
+    font-family: notosans;
+    src: url(notosans.ttf);
 }
 
 * {
-  font-family: 'mplus2', sans-serif;
+  font-family: 'notosans', sans-serif;
   line-height: 1.2em;
 }
 
