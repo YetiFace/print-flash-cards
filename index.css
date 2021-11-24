@@ -4,7 +4,8 @@
 }
 
 * {
-  font-family: 'M PLUS 2', sans-serif;
+  font-family: 'mplus2', sans-serif;
+  line-height: 1.2em;
 }
 
 body {
@@ -60,7 +61,7 @@ section {
 }
 
 .card p.word {
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 @media print {
@@ -76,7 +77,6 @@ section {
     }
 
 }
-
 
 section.chrome {
 margin-top: -2px;
