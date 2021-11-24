@@ -22,7 +22,9 @@ body {
   padding: 25px;
   border-radius: 9px;
 }
-
+#controls input {
+  font-size: 1em;
+}
 #controls textarea {
   height: 20vh;
 }
