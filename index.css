@@ -18,7 +18,7 @@ body {
 }
 
 #controls{
-  width: 80%;
+  width: 100%;
   min-width: 300px;
   margin: 0 auto;
   margin-top: 10px;
@@ -93,6 +93,12 @@ section {
 
 .card p.word {
   font-size: xx-large;
+}
+
+@media screen and (min-width: 768px) {
+  #controls {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 992px) {
