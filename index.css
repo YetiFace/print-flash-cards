@@ -46,11 +46,13 @@ body {
 
 .printHelp {
   background: rgba(50, 30, 165, 0.73);
+  margin: 0 auto;
   margin-top: 40px;
-  padding: 15px 30px 20px 30px;
+  padding: 25px 40px 30px 40px;
   border-radius: 9px;
   color: white;
-  2px dashed white;
+  border: 2px dashed white;
+  text-align: left;
 }
 
 section {
