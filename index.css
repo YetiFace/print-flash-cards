@@ -32,11 +32,11 @@ body {
   text-decoration: underline overline white dotted;
   text-decoration-thickness: 5px;
   text-underline-offset: 7px;
-  font-size: 24px;
+  font-size: 23px;
 }
 #controls .title p {
   color: white;
-  margin-top: -8px;
+  margin-top: -3px;
   font-size: 1.2em;
 }
 #controls input, #controls textarea {
@@ -54,6 +54,7 @@ body {
 }
 #controls textarea {
   height: 20vh;
+  resize: none;
 }
 #controls #cardInfoInput {
   background-color: white;
@@ -112,7 +113,10 @@ section {
 
 @media screen and (min-width: 460px) {
     #controls h1 {
-      font-size: 40px;
+      font-size: 42px;
+    }
+    #controls .title p {
+      margin-top: -14px;
     }
 }
 @media screen and (min-width: 768px) {
