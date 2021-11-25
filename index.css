@@ -39,6 +39,12 @@ body {
   margin-top: -3px;
   font-size: 1.2em;
 }
+#controls label {
+  font-weight: 600;
+}
+#controls label em {
+  font-weight: initial;
+}
 #controls input, #controls textarea {
   caret-color: purple;
   width: 40%;
