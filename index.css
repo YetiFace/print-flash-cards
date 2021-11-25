@@ -17,9 +17,7 @@ body {
   margin: 0;
 }
 
-#controls{
-  width: 100%;
-  min-width: 300px;
+#controls {
   margin: 0 auto;
   background: rgba(255, 165, 0, 0.73);
   text-align: center;
