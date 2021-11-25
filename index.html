@@ -39,12 +39,12 @@
     </div>
     <form name="cardInfo">
       <p>
-        <label for='task'>Card task, e.g. spell, say, fill in the blanks (leave empty if unwanted):</label><br><br>
+        <label for='task'>Card instruction (optional), e.g. spell, sound out, read:</label><br><br>
         <input name="task" type="text" placeholder="Spell">
       </p>
       <p>
-        <label for="words">List all the words you want, one per line<br>
-        <em>(Copy and pasting words written and saved elsewhere will probably be best):</em></label><br><br>
+        <label for="words">Word list, one per line<br>
+        <em>(Top tip: write and save your word list elsewhere then paste it here):</em></label><br><br>
         <textarea name="words" placeholder="Wanderful&#10;Speeling&#10;Cardz"></textarea>
       </p>
       <br>
@@ -53,10 +53,15 @@
     <div class='printHelp'>
       <h2>Important Printing Note</h2>
       <p>
-        This is designed to print 12 cards per A4 paper set to <em>landscape</em> (it will take as many words as you have but 12 per sheet).<br><br>
-        Make sure in the print settings the scale is set to 100 and the margins are set to 'none'. The cards should completely cover the page.<br><br>
-        Tested with Firefox and Chrome Nov 2021 - other browsers may or may not work.
-      </p>
+        Cards print 12 per sheet of A4 <em>landscape</em> and are expected to completely cover the page.<br><br>
+        Before printing confirm the following settings in the preview:
+        <ul>
+          <li>Scale: 100</li>
+          <li>Margins: none</li>
+        </ul>
+        <br>
+        Tested with desktop Firefox, Chrome and Edge Nov 2021 - other browsers may or may not work.
+       </p>
     </div>
   </div>
 <script>
