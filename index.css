@@ -44,10 +44,10 @@ body {
   width: 40%;
   min-width: 200px;
   box-sizing: border-box;
+  border: none;
 }
 #controls input:focus, #controls textarea:focus {
-  border: 4px dotted rgba(50, 30, 165, 0.73);
-  outline: none;
+  outline: 4px dotted rgba(50, 30, 165, 0.73);
 }
 #controls input {
   font-size: 1em;
@@ -61,11 +61,11 @@ body {
   padding: 5px;
   cursor: pointer;
   border-radius: 8px;
+  font-weight: bolder;
 }
 #controls #cardInfoInput:hover {
   border: 4px solid rgba(50, 30, 165, 0.73);
   color: rgba(50, 30, 165, 0.73);
-  font-weight: bolder;
 }
 
 .printHelp {
