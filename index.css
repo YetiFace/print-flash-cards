@@ -30,7 +30,7 @@ body {
   text-decoration: underline overline white dotted;
   text-decoration-thickness: 5px;
   text-underline-offset: 7px;
-  font-size: 40px;
+  font-size: 24px;
 }
 #controls .title p {
   color: white;
@@ -39,15 +39,30 @@ body {
 }
 #controls input, #controls textarea {
   caret-color: purple;
+  width: 40%;
+  min-width: 200px;
+  box-sizing: border-box;
 }
 #controls input:focus, #controls textarea:focus {
-  outline: 4px dotted darkgreen;
+  border: 4px dotted rgba(50, 30, 165, 0.73);
+  outline: none;
 }
 #controls input {
   font-size: 1em;
 }
 #controls textarea {
   height: 20vh;
+}
+#controls #cardInfoInput {
+  background-color: white;
+  border: 4px solid white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#controls #cardInfoInput:hover {
+  border: 4px solid rgba(50, 30, 165, 0.73);
+  color: rgba(50, 30, 165, 0.73);
 }
 
 .printHelp {
@@ -92,6 +107,11 @@ section {
   font-size: xx-large;
 }
 
+@media screen and (min-width: 460px) {
+    #controls h1 {
+      font-size: 40px;
+    }
+}
 @media screen and (min-width: 768px) {
   #controls {
     width: 80%;
