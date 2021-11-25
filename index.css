@@ -138,6 +138,9 @@ section {
     section {
       break-after: page;
     }
+    body {
+      background: none;
+    }
 }
 
 section.chrome {
